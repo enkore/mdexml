@@ -17,17 +17,17 @@ def index():
          SELECT title, nid, replace(body_value, '\\r\\n', '\r\n') AS body
          FROM node
          JOIN field_data_body body ON body.entity_id = nid
-         WHERE type = 'page'"""):
+         WHERE type = 'page'
+         ORDER BY NOT title LIKE 'mods.de%', title LIKE '%.php', title"""):
         chapter["params"] = query("""
              SELECT title, replace(body_value, '\\r\\n', '\r\n') AS body, field_method_value AS method
              FROM node
              JOIN field_data_body body ON node.nid = body.entity_id
              JOIN field_data_field_method method ON node.nid = method.entity_id
-             JOIN nodehierarchy_menu_links lut ON lut.nid = node.nid
-             JOIN menu_links child ON child.mlid = lut.mlid
+             JOIN nodehierarchy_menu_links lut USING(nid)
+             JOIN menu_links child USING (mlid)
              JOIN menu_links parent ON parent.mlid = child.plid AND parent.link_title = ?""", [chapter["title"]])
         chapters.append(chapter)
-    chapters.sort(key=lambda chapter: (not chapter["title"].startswith("mods.de"), chapter["title"].endswith(".php"), chapter["title"]))
     return render_template("doc.html", chapters=chapters)
 
 
