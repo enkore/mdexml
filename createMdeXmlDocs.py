@@ -1,5 +1,6 @@
 import re
 import sqlite3
+import html
 
 from flask import Flask, g, render_template
 from jinja2 import evalcontextfilter, Markup, escape
@@ -9,6 +10,16 @@ DATABASE = "content.sqlite"
 _paragraph_re = re.compile(r'(?:\r\n|\r|\n){2,}')
 app = Flask(__name__)
 
+
+def escape_xml(text):
+    while "<xml" in text:
+        parts = re.split(r"</?xml[^>]*>", text)
+
+        text = "{}<pre>{}</pre>{}".format(parts[0],
+                                          html.escape(parts[1]),
+                                          parts[2])
+    text = re.sub("(\r?\n)+", "\n", text)
+    return text
 
 @app.route("/")
 def index():
@@ -27,6 +38,7 @@ def index():
              JOIN nodehierarchy_menu_links lut USING(nid)
              JOIN menu_links child USING (mlid)
              JOIN menu_links parent ON parent.mlid = child.plid AND parent.link_title = ?""", [chapter["title"]])
+        chapter["body"] = escape_xml(chapter["body"])
         chapters.append(chapter)
     return render_template("doc.html", chapters=chapters)
 

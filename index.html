@@ -44,12 +44,9 @@ Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Du
 <section>
 	<h2><a name="mods.de%20Forum%20XML%20API%20Dokumentation" href="#mods.de%20Forum%20XML%20API%20Dokumentation">mods.de Forum XML API Dokumentation</a></h2>	
 
-
-	<p><p>Das hier ist die inoffizielle Dokumentation der XML Schnittstelle des mods.de Forums. Aktuell gibt es keine offizielle Dokumentation, deswegen versuche ich hier möglichst alle Funktionen zentral zu dokumentieren und möglichst ausführlich zu beschreiben.</p>
-
-<p>Wenn was fehlt oder hier was falsches stehen sollte, wäre es nett, einen Kommentar zu hinterlassen oder mir im Forum eine <a href="http://my.mods.de/csde_rats">PM zu schreiben</a>.</p>
-
-<p>Have Fun!</p></p>
+	<p>Das hier ist die inoffizielle Dokumentation der XML Schnittstelle des mods.de Forums. Aktuell gibt es keine offizielle Dokumentation, deswegen versuche ich hier möglichst alle Funktionen zentral zu dokumentieren und möglichst ausführlich zu beschreiben.
+Wenn was fehlt oder hier was falsches stehen sollte, wäre es nett, einen Kommentar zu hinterlassen oder mir im Forum eine <a href="http://my.mods.de/csde_rats">PM zu schreiben</a>.
+Have Fun!</p>
 
 	
 </section>
@@ -57,16 +54,11 @@ Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Du
 <section>
 	<h2><a name="Applikationen" href="#Applikationen">Applikationen</a></h2>	
 
-
-	<p><p>Wenn ihr auch eine Applikation gebastelt habt, die die API verwendet, könnt ihr einfach einen Kommentar schreiben und ich trags dann hier ein! ;)</p>
-
-<p><ul></p>
-
-<p><li><a href="http://code.google.com/p/potdroid/">potdroid App für Android</a></li></p>
-
-<p><li><a href="http://kamelstall.de/bb/client/">JQuery Client</a></li></p>
-
-<p></ul></p></p>
+	<p>Wenn ihr auch eine Applikation gebastelt habt, die die API verwendet, könnt ihr einfach einen Kommentar schreiben und ich trags dann hier ein! ;)
+<ul>
+<li><a href="http://code.google.com/p/potdroid/">potdroid App für Android</a></li>
+<li><a href="http://kamelstall.de/bb/client/">JQuery Client</a></li>
+</ul></p>
 
 	
 </section>
@@ -74,102 +66,54 @@ Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Du
 <section>
 	<h2><a name="Identifikatoren" href="#Identifikatoren">Identifikatoren</a></h2>	
 
-
-	<p><p>Bei den ganzen vielen IDs die es hier gibt, wird einem ja ganz schwindelig.</p>
-
-<p>Daher hier eine Übersicht ;)</p>
-
-<p><table class="views-table"></p>
-
-<p>  <thead></p>
-
-<p>    <tr></p>
-
-<p>      <th class="views-field">Abk&uuml;rzung:</th></p>
-
-<p>      <th class="views-field">Name:</th></p>
-
-<p>      <th class="views-field">Beschreibung:</th></p>
-
-<p>    </tr></p>
-
-<p>  </thead></p>
-
-<p>  <tbody></p>
-
-<p>    <tr class="odd"></p>
-
-<p>      <td class="views-field">CID</td></p>
-
-<p>      <td class="views-field">Category-ID</td></p>
-
-<p>      <td class="views-field">Jedes Board gehört einer Kategorie an, jede Kategorie hat eine eigene CID</td></p>
-
-<p>    </tr></p>
-
-<p>    <tr class="even"></p>
-
-<p>      <td class="views-field">BID</td></p>
-
-<p>      <td class="views-field">Board-ID</td></p>
-
-<p>      <td class="views-field">Jedes Board hat eine für alle Boards einzigartige ID</td></p>
-
-<p>    </tr></p>
-
-<p>    <tr class="even"></p>
-
-<p>      <td class="views-field">TID</td></p>
-
-<p>      <td class="views-field">Thread-ID</td></p>
-
-<p>      <td class="views-field">Jeder Thread hat eine über alle Threads einzigartige ID</td></p>
-
-<p>    </tr></p>
-
-<p>    <tr class="even"></p>
-
-<p>      <td class="views-field">PID</td></p>
-
-<p>      <td class="views-field">Posting-ID</td></p>
-
-<p>      <td class="views-field">Jedes Posting hat ebenso eine ID, die es komplett unabhängig von seinem Thread identifiziert</td></p>
-
-<p>    </tr></p>
-
-<p>    <tr class="odd"></p>
-
-<p>      <td class="views-field">UID</td></p>
-
-<p>      <td class="views-field">User-ID</td></p>
-
-<p>      <td class="views-field">Jeder Benutzer hat seine eigene UID. Die Profilseiten liegen z.B. unter http://my.mods.de/$UID</td></p>
-
-<p>    </tr></p>
-
-<p>    <tr class="odd"></p>
-
-<p>      <td class="views-field">&nbsp;</td></p>
-
-<p>      <td class="views-field">Avatar-ID</td></p>
-
-<p>      <td class="views-field">Ebenso hat jede Instanz eines Avatars seine eigene ID</td></p>
-
-<p>    </tr></p>
-
-<p>    <tr class="odd"></p>
-
-<p>      <td class="views-field">SID</td></p>
-
-<p>      <td class="views-field">Session-ID</td></p>
-
-<p>      <td class="views-field">Wird von PHP verwaltet, identifiziert die Session. Wird als Cookie vom Server gesendet und sollte nach dem Login bei jedem Aufruf wieder zum Server gesendet werden.</td></p>
-
-<p>    </tr></p>
-
-<p>  </tbody></p>
-
-<p></table></p></p>
+	<p>Bei den ganzen vielen IDs die es hier gibt, wird einem ja ganz schwindelig.
+Daher hier eine Übersicht ;)
+<table class="views-table">
+  <thead>
+    <tr>
+      <th class="views-field">Abk&uuml;rzung:</th>
+      <th class="views-field">Name:</th>
+      <th class="views-field">Beschreibung:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td class="views-field">CID</td>
+      <td class="views-field">Category-ID</td>
+      <td class="views-field">Jedes Board gehört einer Kategorie an, jede Kategorie hat eine eigene CID</td>
+    </tr>
+    <tr class="even">
+      <td class="views-field">BID</td>
+      <td class="views-field">Board-ID</td>
+      <td class="views-field">Jedes Board hat eine für alle Boards einzigartige ID</td>
+    </tr>
+    <tr class="even">
+      <td class="views-field">TID</td>
+      <td class="views-field">Thread-ID</td>
+      <td class="views-field">Jeder Thread hat eine über alle Threads einzigartige ID</td>
+    </tr>
+    <tr class="even">
+      <td class="views-field">PID</td>
+      <td class="views-field">Posting-ID</td>
+      <td class="views-field">Jedes Posting hat ebenso eine ID, die es komplett unabhängig von seinem Thread identifiziert</td>
+    </tr>
+    <tr class="odd">
+      <td class="views-field">UID</td>
+      <td class="views-field">User-ID</td>
+      <td class="views-field">Jeder Benutzer hat seine eigene UID. Die Profilseiten liegen z.B. unter http://my.mods.de/$UID</td>
+    </tr>
+    <tr class="odd">
+      <td class="views-field">&nbsp;</td>
+      <td class="views-field">Avatar-ID</td>
+      <td class="views-field">Ebenso hat jede Instanz eines Avatars seine eigene ID</td>
+    </tr>
+    <tr class="odd">
+      <td class="views-field">SID</td>
+      <td class="views-field">Session-ID</td>
+      <td class="views-field">Wird von PHP verwaltet, identifiziert die Session. Wird als Cookie vom Server gesendet und sollte nach dem Login bei jedem Aufruf wieder zum Server gesendet werden.</td>
+    </tr>
+  </tbody>
+</table></p>
 
 	
 </section>
@@ -177,18 +121,12 @@ Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Du
 <section>
 	<h2><a name="Login" href="#Login">Login</a></h2>	
 
-
-	<p><p>Um sich einzuloggen reicht es die folgende Kombination an Parametern zu senden;></p>
-
-<p>Man kann dann recht einfach nachschauen, ob es geklappt hat, wenn man die zurückgegebene Seite</p>
-
-<p>nach dem String "Fehler beim Einloggen" durchsucht. Es kommen Cookies zurück, die man speichern</p>
-
-<p>muss und bei folgenden Aufrufen wieder an den Server schicken sollte, benutzt man CURL <a href="http://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTCOOKIEFILE">kann das</p>
-
-<p>CURL für einen erledigen</a>.</p>
-
-<p>Die Addresse des Logins lautet http://login.mods.de/</p></p>
+	<p>Um sich einzuloggen reicht es die folgende Kombination an Parametern zu senden;>
+Man kann dann recht einfach nachschauen, ob es geklappt hat, wenn man die zurückgegebene Seite
+nach dem String "Fehler beim Einloggen" durchsucht. Es kommen Cookies zurück, die man speichern
+muss und bei folgenden Aufrufen wieder an den Server schicken sollte, benutzt man CURL <a href="http://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTCOOKIEFILE">kann das
+CURL für einen erledigen</a>.
+Die Addresse des Logins lautet http://login.mods.de/</p>
 
 	
 	<table border="1">
@@ -228,12 +166,9 @@ Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Du
 <section>
 	<h2><a name="Logout" href="#Logout">Logout</a></h2>	
 
-
-	<p><p>Zum Ausloggen reicht es einen einfachen Request an http://login.mods.de/logout/ abzusetzen.</p>
-
-<p>Jetzt kommt das aber: Es gibt einen Sicherungsmechanismus, man muss ein Sicherheitstoken übergeben.</p>
-
-<p>Bei Misserfolg kommt einfach eine leere Seite zurück, bei erfolgtem Ausloggen enthält die Seite den Text "Du hast dich ausgeloggt".</p></p>
+	<p>Zum Ausloggen reicht es einen einfachen Request an http://login.mods.de/logout/ abzusetzen.
+Jetzt kommt das aber: Es gibt einen Sicherungsmechanismus, man muss ein Sicherheitstoken übergeben.
+Bei Misserfolg kommt einfach eine leere Seite zurück, bei erfolgtem Ausloggen enthält die Seite den Text "Du hast dich ausgeloggt".</p>
 
 	
 	<table border="1">
@@ -264,12 +199,9 @@ Am einfachsten kommt man also dran, indem man sich eine beliebige Seite vom Foru
 <section>
 	<h2><a name="Queries" href="#Queries">Queries</a></h2>	
 
-
-	<p><p>Hier gehts um die möglichen Queries (Anfragen), die die eigentliche Funktionalität der XML API stellen.</p>
-
-<p>Alle Dateien der XML API liegen im Ordner http://forum.mods.de/bb/xml/, allerdings muss man hin und wieder (z.B. zum Anmelden) auch auf andere Pfade zugreifen). Parameter werden meistens per GET übergeben.</p>
-
-<p>Das ausgegebene XML hält sich an <a href="http://forum.mods.de/bb/forum.xsd">dieses XML-Schema</a>.</p></p>
+	<p>Hier gehts um die möglichen Queries (Anfragen), die die eigentliche Funktionalität der XML API stellen.
+Alle Dateien der XML API liegen im Ordner http://forum.mods.de/bb/xml/, allerdings muss man hin und wieder (z.B. zum Anmelden) auch auf andere Pfade zugreifen). Parameter werden meistens per GET übergeben.
+Das ausgegebene XML hält sich an <a href="http://forum.mods.de/bb/forum.xsd">dieses XML-Schema</a>.</p>
 
 	
 </section>
@@ -277,239 +209,123 @@ Am einfachsten kommt man also dran, indem man sich eine beliebige Seite vom Foru
 <section>
 	<h2><a name="board.php" href="#board.php">board.php</a></h2>	
 
-
-	<p><p>Die board.php gibt Infos zu einem Board mit bekannter Board-ID (siehe dazu <a href="/docs/boards.php">boards.php</a>) inklusive einer Threadliste aus.</p>
-
-<p><xml title="Beispiel"></p>
-
-<p><?xml version="1.0" encoding="utf-8" ?></p>
-
-<p><board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://forum.mods.de/bb/forum.xsd" current-user-id="1224901" id="43"></p>
-
-<p>  <name></p>
-
-<p>    <![CDATA[Webdesign & Coding]]></p>
-
-<p>  </name></p>
-
-<p>  <description></p>
-
-<p>    <![CDATA[Hello World!]]></p>
-
-<p>  </description></p>
-
-<p>  <number-of-threads value="4497"/></p>
-
-<p>  <number-of-replies value="220990"/></p>
-
-<p>  <in-category id="21"/></p>
-
-<p>  <threads with-stickies="1" with-globals="1" page="1" offset="0" count="30"></p>
-
-<p>    <thread id="189020"></p>
-
-<p>      <title></p>
-
-<p>        <![CDATA[Aktualisierte Forensatzung]]></p>
-
-<p>      </title></p>
-
-<p>      <subtitle></p>
-
-<p>        <![CDATA[vom 28.09.08]]></p>
-
-<p>      </subtitle></p>
-
-<p>      <number-of-replies value="0"/></p>
-
-<p>      <number-of-hits value="45239"/></p>
-
-<p>      <number-of-pages value="1"/></p>
-
-<p>      <flags></p>
-
-<p>        <is-closed value="1"/></p>
-
-<p>        <is-sticky value="1"/></p>
-
-<p>        <is-important value="1"/></p>
-
-<p>        <is-announcement value="1"/></p>
-
-<p>        <is-global value="1"/></p>
-
-<p>      </flags></p>
-
-<p>      <in-board id="14"/></p>
-
-<p>      <firstpost></p>
-
-<p>        <post></p>
-
-<p>          <user id="2822"></p>
-
-<p>            <![CDATA[Insaniac]]></p>
-
-<p>          </user></p>
-
-<p>          <date timestamp="1222589113">28.09.2008 10:05:13 </p>
-
-<p>          </date></p>
-
-<p>          <in-thread id="189020"/></p>
-
-<p>          <in-board id="14"/></p>
-
-<p>        </post></p>
-
-<p>      </firstpost></p>
-
-<p>    </thread></p>
-
-<p>  </threads></p>
-
-<p></board></p>
-
-<p></xml></p>
-
-<p><ul></p>
-
-<p>	<li>board</p>
-
-<p>    	current-user-id User-ID</p>
-
-<p>        id Board-ID</p>
-
-<p>        <ul></p>
-
-<p>        	<li>name</li></p>
-
-<p>            <li>description</li></p>
-
-<p>            <li>number-of-threads</p>
-
-<p>            	value ist die Anzahl der Threads im Board</li></p>
-
-<p>            <li>number-of-replies</p>
-
-<p>            	value ist die Anzahl aller Antworten</li></p>
-
-<p>            <li>in-category</p>
-
-<p>            	id ist die Category-ID</li></p>
-
-<p>            <li>threads</p>
-
-<p>            	with-stickies spiegelt den Parameter wieder</p>
-
-<p>                with-globals ebenso</p>
-
-<p>                page ist die Seite</p>
-
-<p>                offset ist die Anzahl der am Anfang übersprungenen Threads</p>
-
-<p>                count die Anzahl der Threads dieser Seite</p>
-
-<p>                <ul></p>
-
-<p>                	<li>thread</p>
-
-<p>                    	id ist die Thread-ID</p>
-
-<p>                        <ul></p>
-
-<p>                            <li>title</p>
-
-<p>                                Inhalt ist der Threadtitel</li></p>
-
-<p>                            <li>subtitle</p>
-
-<p>                                Inhalt ist der Untertitel</li></p>
-
-<p>                            <li>number-of-replies</p>
-
-<p>                                value ist die Anzahl der Antworten</li></p>
-
-<p>                            <li>number-of-hits</p>
-
-<p>                                value ist die Anzahl der Aufrufe</li></p>
-
-<p>                            <li>flags</p>
-
-<p>                                (0=Nein, 1=Ja)</p>
-
-<p>                                <ul></p>
-
-<p>                                    <li>is-closed</p>
-
-<p>                                        value gibt an, ob geschlossen</li></p>
-
-<p>                                    <li>is-sticky</p>
-
-<p>                                        value gibt an, ob angepinnt</li></p>
-
-<p>                                    <li>is-important</p>
-
-<p>                                        value gibt an, ob als wichtig markiert</li></p>
-
-<p>                                    <li>is-announcement</p>
-
-<p>                                        value gibt an, ob als Ankündigung markiert</li></p>
-
-<p>                                    <li>is-global</p>
-
-<p>                                        value gibt an, ob der Thread global (in allen Foren sichtbar) ist</li></p>
-
-<p>                                </ul></p>
-
-<p>                            </li></p>
-
-<p>                            <li>in-board</p>
-
-<p>                                id ist die Board-ID</li></p>
-
-<p>                            <li>firstpost</p>
-
-<p>  <br>
-                              <ul></p>
-
-<p>                                    <li>user</p>
-
-<p>                                        id ist die User-ID</p>
-
-<p>                                        Inhalt der Name</li></p>
-
-<p>                                    <li>date</p>
-
-<p>                                        timestamp ist ein UNIX-Zeitstempel</p>
-
-<p>                                        Inhalt ist ein vorformatiertes Datum</li></p>
-
-<p>                                    <li>in-thread</p>
-
-<p>                                        id ist die Thread-ID</li></p>
-
-<p>                                    <li>in-board</p>
-
-<p>                                        id ist die Board-ID</li></p>
-
-<p>                                </ul></p>
-
-<p>                            </li></p>
-
-<p>                        </ul></p>
-
-<p>                    </li></p>
-
-<p>                </ul></p>
-
-<p>            </li></p>
-
-<p>        </ul></p>
-
-<p>    </li></p>
-
-<p></ul></p></p>
+	<p>Die board.php gibt Infos zu einem Board mit bekannter Board-ID (siehe dazu <a href="/docs/boards.php">boards.php</a>) inklusive einer Threadliste aus.
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;board xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;http://forum.mods.de/bb/forum.xsd&quot; current-user-id=&quot;1224901&quot; id=&quot;43&quot;&gt;
+  &lt;name&gt;
+    &lt;![CDATA[Webdesign &amp; Coding]]&gt;
+  &lt;/name&gt;
+  &lt;description&gt;
+    &lt;![CDATA[Hello World!]]&gt;
+  &lt;/description&gt;
+  &lt;number-of-threads value=&quot;4497&quot;/&gt;
+  &lt;number-of-replies value=&quot;220990&quot;/&gt;
+  &lt;in-category id=&quot;21&quot;/&gt;
+  &lt;threads with-stickies=&quot;1&quot; with-globals=&quot;1&quot; page=&quot;1&quot; offset=&quot;0&quot; count=&quot;30&quot;&gt;
+    &lt;thread id=&quot;189020&quot;&gt;
+      &lt;title&gt;
+        &lt;![CDATA[Aktualisierte Forensatzung]]&gt;
+      &lt;/title&gt;
+      &lt;subtitle&gt;
+        &lt;![CDATA[vom 28.09.08]]&gt;
+      &lt;/subtitle&gt;
+      &lt;number-of-replies value=&quot;0&quot;/&gt;
+      &lt;number-of-hits value=&quot;45239&quot;/&gt;
+      &lt;number-of-pages value=&quot;1&quot;/&gt;
+      &lt;flags&gt;
+        &lt;is-closed value=&quot;1&quot;/&gt;
+        &lt;is-sticky value=&quot;1&quot;/&gt;
+        &lt;is-important value=&quot;1&quot;/&gt;
+        &lt;is-announcement value=&quot;1&quot;/&gt;
+        &lt;is-global value=&quot;1&quot;/&gt;
+      &lt;/flags&gt;
+      &lt;in-board id=&quot;14&quot;/&gt;
+      &lt;firstpost&gt;
+        &lt;post&gt;
+          &lt;user id=&quot;2822&quot;&gt;
+            &lt;![CDATA[Insaniac]]&gt;
+          &lt;/user&gt;
+          &lt;date timestamp=&quot;1222589113&quot;&gt;28.09.2008 10:05:13 
+          &lt;/date&gt;
+          &lt;in-thread id=&quot;189020&quot;/&gt;
+          &lt;in-board id=&quot;14&quot;/&gt;
+        &lt;/post&gt;
+      &lt;/firstpost&gt;
+    &lt;/thread&gt;
+  &lt;/threads&gt;
+&lt;/board&gt;
+</pre>
+<ul>
+	<li>board
+    	current-user-id User-ID
+        id Board-ID
+        <ul>
+        	<li>name</li>
+            <li>description</li>
+            <li>number-of-threads
+            	value ist die Anzahl der Threads im Board</li>
+            <li>number-of-replies
+            	value ist die Anzahl aller Antworten</li>
+            <li>in-category
+            	id ist die Category-ID</li>
+            <li>threads
+            	with-stickies spiegelt den Parameter wieder
+                with-globals ebenso
+                page ist die Seite
+                offset ist die Anzahl der am Anfang übersprungenen Threads
+                count die Anzahl der Threads dieser Seite
+                <ul>
+                	<li>thread
+                    	id ist die Thread-ID
+                        <ul>
+                            <li>title
+                                Inhalt ist der Threadtitel</li>
+                            <li>subtitle
+                                Inhalt ist der Untertitel</li>
+                            <li>number-of-replies
+                                value ist die Anzahl der Antworten</li>
+                            <li>number-of-hits
+                                value ist die Anzahl der Aufrufe</li>
+                            <li>flags
+                                (0=Nein, 1=Ja)
+                                <ul>
+                                    <li>is-closed
+                                        value gibt an, ob geschlossen</li>
+                                    <li>is-sticky
+                                        value gibt an, ob angepinnt</li>
+                                    <li>is-important
+                                        value gibt an, ob als wichtig markiert</li>
+                                    <li>is-announcement
+                                        value gibt an, ob als Ankündigung markiert</li>
+                                    <li>is-global
+                                        value gibt an, ob der Thread global (in allen Foren sichtbar) ist</li>
+                                </ul>
+                            </li>
+                            <li>in-board
+                                id ist die Board-ID</li>
+                            <li>firstpost
+  
+                              <ul>
+                                    <li>user
+                                        id ist die User-ID
+                                        Inhalt der Name</li>
+                                    <li>date
+                                        timestamp ist ein UNIX-Zeitstempel
+                                        Inhalt ist ein vorformatiertes Datum</li>
+                                    <li>in-thread
+                                        id ist die Thread-ID</li>
+                                    <li>in-board
+                                        id ist die Board-ID</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul></p>
 
 	
 	<table border="1">
@@ -551,211 +367,109 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <xml><invalid-board/></xml> zur
 <section>
 	<h2><a name="boards.php" href="#boards.php">boards.php</a></h2>	
 
-
-	<p><p>Gibt eine Liste aller Foren zurück.</p>
-
-<p><xml title="Beispiel"></p>
-
-<p><?xml version="1.0" encoding="utf-8" ?> </p>
-
-<p><categories  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://forum.mods.de/bb/forum.xsd" current-user-id="1224901" count="9"></p>
-
-<p>  <category id="6"></p>
-
-<p>    <name></p>
-
-<p>      <![CDATA[Allgemeines]]></p>
-
-<p>    </name></p>
-
-<p>    <description></p>
-
-<p>      <![CDATA[Seitenübergreifende Themen]]></p>
-
-<p>    </description></p>
-
-<p>    <boards count="4"></p>
-
-<p>      <board id="95"></p>
-
-<p>        <name></p>
-
-<p>          <![CDATA[3DSupply.de]]></p>
-
-<p>        </name></p>
-
-<p>        <description></p>
-
-<p>          <![CDATA[Alles rund um 3D Supply]]></p>
-
-<p>        </description></p>
-
-<p>        <number-of-threads value='451' /></p>
-
-<p>        <number-of-replies value='22040' /></p>
-
-<p>        <in-category id="6" /></p>
-
-<p>        <lastpost></p>
-
-<p>          <post></p>
-
-<p>            <user id="1241980"></p>
-
-<p>              <![CDATA[Chinakohl mit Reis]]></p>
-
-<p>            </user></p>
-
-<p>            <date timestamp="1311972627">29.07.2011 22:50:27</p>
-
-<p>            </date></p>
-
-<p>            <in-thread id="171342"></p>
-
-<p>              <![CDATA[3DSupply Produktfragen]]></p>
-
-<p>            </in-thread></p>
-
-<p>            <in-board id="95" /></p>
-
-<p>          </post></p>
-
-<p>        </lastpost></p>
-
-<p>        <moderators></p>
-
-<p>          <user id="2822"></p>
-
-<p>            <![CDATA[Insaniac]]></p>
-
-<p>          </user></p>
-
-<p>        </moderators></p>
-
-<p>      </board></p>
-
-<p>    </boards></p>
-
-<p>  </category></p>
-
-<p></categories></p>
-
-<p></xml></p>
-
-<p><ul></p>
-
-<p>    <li>categories ist das root-Element.</p>
-
-<p>        current-user-id ist die User-ID des angemeldeten Benutzers</p>
-
-<p>        count ist die Anzahl der Kategorien</p>
-
-<p>        <ul></p>
-
-<p>            <li>category repräsentiert eine Kategorie</p>
-
-<p>                id ist die Category-ID</p>
-
-<p>                <ul></p>
-
-<p>                    <li>name</li></p>
-
-<p>                    <li>description</li></p>
-
-<p>                    <li>boards</p>
-
-<p>                        count Anzahl</p>
-
-<p>                        <ul></p>
-
-<p>                            <li>board</p>
-
-<p>                                <ul></p>
-
-<p>                                    <li>name</li></p>
-
-<p>                                    <li>desription</li></p>
-
-<p>                                    <li>number-of-threads</p>
-
-<p>                                        value Anzahl</li></p>
-
-<p>                                    <li>number-of-replies</p>
-
-<p>                                        value Anzahl</li></p>
-
-<p>                                    <li>in-category</p>
-
-<p>                                        id Die Category-ID (Könnte das womöglich redundant sein?)</li></p>
-
-<p>                                    <li>lastpost</p>
-
-<p>                                        <ul></p>
-
-<p>                                            <li>post</p>
-
-<p>                                                <ul></p>
-
-<p>                                                    <li>user</p>
-
-<p>                                                        id User-ID</p>
-
-<p>                                                        Inhalt ist der Name</li></p>
-
-<p>                                                    <li>date</p>
-
-<p>                                                        timestamp ist der UNIX-Zeitstempel</p>
-
-<p>                                                        Inhalt ist ein vorformatiertes Datum im Format DD.MM.YYYY HH:MM:SS</li></p>
-
-<p>                                                    <li>in-thread</p>
-
-<p>                                                        id ist die Thread-ID</p>
-
-<p>                                                        Inhalt ist der Titel</li></p>
-
-<p>                                                    <li>in-board</p>
-
-<p>                                                        id ist die Board-ID</li></p>
-
-<p>                                                </ul></p>
-
-<p>                                            </li></p>
-
-<p>                                        </ul></p>
-
-<p>                                    </li></p>
-
-<p>                                    <li>moderators</p>
-
-<p>                                        <ul></p>
-
-<p>                                            <li>user</p>
-
-<p>                           <br>
-                     id ist die User-ID</li></p>
-
-<p>                                        </ul></p>
-
-<p>                                    </li></p>
-
-<p>                                </ul></p>
-
-<p>                            </li></p>
-
-<p>                        </ul></p>
-
-<p>                    </li></p>
-
-<p>                </ul></p>
-
-<p>            </li></p>
-
-<p>        </ul></p>
-
-<p>    </li></p>
-
-<p></ul></p></p>
+	<p>Gibt eine Liste aller Foren zurück.
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
+&lt;categories  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;http://forum.mods.de/bb/forum.xsd&quot; current-user-id=&quot;1224901&quot; count=&quot;9&quot;&gt;
+  &lt;category id=&quot;6&quot;&gt;
+    &lt;name&gt;
+      &lt;![CDATA[Allgemeines]]&gt;
+    &lt;/name&gt;
+    &lt;description&gt;
+      &lt;![CDATA[Seitenübergreifende Themen]]&gt;
+    &lt;/description&gt;
+    &lt;boards count=&quot;4&quot;&gt;
+      &lt;board id=&quot;95&quot;&gt;
+        &lt;name&gt;
+          &lt;![CDATA[3DSupply.de]]&gt;
+        &lt;/name&gt;
+        &lt;description&gt;
+          &lt;![CDATA[Alles rund um 3D Supply]]&gt;
+        &lt;/description&gt;
+        &lt;number-of-threads value=&#x27;451&#x27; /&gt;
+        &lt;number-of-replies value=&#x27;22040&#x27; /&gt;
+        &lt;in-category id=&quot;6&quot; /&gt;
+        &lt;lastpost&gt;
+          &lt;post&gt;
+            &lt;user id=&quot;1241980&quot;&gt;
+              &lt;![CDATA[Chinakohl mit Reis]]&gt;
+            &lt;/user&gt;
+            &lt;date timestamp=&quot;1311972627&quot;&gt;29.07.2011 22:50:27
+            &lt;/date&gt;
+            &lt;in-thread id=&quot;171342&quot;&gt;
+              &lt;![CDATA[3DSupply Produktfragen]]&gt;
+            &lt;/in-thread&gt;
+            &lt;in-board id=&quot;95&quot; /&gt;
+          &lt;/post&gt;
+        &lt;/lastpost&gt;
+        &lt;moderators&gt;
+          &lt;user id=&quot;2822&quot;&gt;
+            &lt;![CDATA[Insaniac]]&gt;
+          &lt;/user&gt;
+        &lt;/moderators&gt;
+      &lt;/board&gt;
+    &lt;/boards&gt;
+  &lt;/category&gt;
+&lt;/categories&gt;
+</pre>
+<ul>
+    <li>categories ist das root-Element.
+        current-user-id ist die User-ID des angemeldeten Benutzers
+        count ist die Anzahl der Kategorien
+        <ul>
+            <li>category repräsentiert eine Kategorie
+                id ist die Category-ID
+                <ul>
+                    <li>name</li>
+                    <li>description</li>
+                    <li>boards
+                        count Anzahl
+                        <ul>
+                            <li>board
+                                <ul>
+                                    <li>name</li>
+                                    <li>desription</li>
+                                    <li>number-of-threads
+                                        value Anzahl</li>
+                                    <li>number-of-replies
+                                        value Anzahl</li>
+                                    <li>in-category
+                                        id Die Category-ID (Könnte das womöglich redundant sein?)</li>
+                                    <li>lastpost
+                                        <ul>
+                                            <li>post
+                                                <ul>
+                                                    <li>user
+                                                        id User-ID
+                                                        Inhalt ist der Name</li>
+                                                    <li>date
+                                                        timestamp ist der UNIX-Zeitstempel
+                                                        Inhalt ist ein vorformatiertes Datum im Format DD.MM.YYYY HH:MM:SS</li>
+                                                    <li>in-thread
+                                                        id ist die Thread-ID
+                                                        Inhalt ist der Titel</li>
+                                                    <li>in-board
+                                                        id ist die Board-ID</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>moderators
+                                        <ul>
+                                            <li>user
+                           
+                     id ist die User-ID</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul></p>
 
 	
 </section>
@@ -763,100 +477,53 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <xml><invalid-board/></xml> zur
 <section>
 	<h2><a name="bookmarks.php" href="#bookmarks.php">bookmarks.php</a></h2>	
 
-
-	<p><p>Gibt alle vom angemeldeten Benutzer gesetzten Bookmarks zurück.</p>
-
-<p><xml title="Beispiel"></p>
-
-<p><?xml version="1.0" encoding="utf-8" ?></p>
-
-<p><bookmarks newposts="6" count="2"></p>
-
-<p>  <bookmark BMID="92071" newposts="6" PID="1242999267"></p>
-
-<p>    <thread TID="194906" closed="0" pages="325"></p>
-
-<p>      <![CDATA[Hardware-Kaufberatung]]></p>
-
-<p>    </thread></p>
-
-<p>    <board BID="10"></p>
-
-<p>      <![CDATA[Hardware & Netzwerk]]></p>
-
-<p>    </board></p>
-
-<p>  </bookmark></p>
-
-<p>  <bookmark BMID="95504" newposts="0" PID="1242999854"></p>
-
-<p>    <thread TID="140831" closed="0" pages="5525"></p>
-
-<p>      <![CDATA[Gehirnsalat]]></p>
-
-<p>    </thread></p>
-
-<p>    <board BID="43"></p>
-
-<p>      <![CDATA[Webdesign & Coding]]></p>
-
-<p>    </board></p>
-
-<p>  </bookmark></p>
-
-<p></bookmarks></p>
-
-<p></xml></p>
-
-<p><ul></p>
-
-<p>    <li>bookmarks ist das root-Element. <br /></p>
-
-<p>        newposts ist die Anzahl der neuen Posts<br /></p>
-
-<p>        count ist die Anzahl der Lesezeichen</p>
-
-<p>        <ul></p>
-
-<p>            <li>bookmark ist ein einzelnes Lesezeichen<br /></p>
-
-<p>                BMID ist die Bookmark-ID<br /></p>
-
-<p>                newposts ist die Anzahl der neuen Posts<br /></p>
-
-<p>                PID ist die Posting-ID des letztens Posts</p>
-
-<p>                <ul></p>
-
-<p>                    <li>thread<br /></p>
-
-<p>                        TID ist die Thread-ID<br /></p>
-
-<p>                        closed ob der Thread geschlossen ist<br /></p>
-
-<p>                        pages die Anzahl der Seite<br /></p>
-
-<p>                        Inhalt ist der Titel des Threads</p>
-
-<p>                    </li></p>
-
-<p>                    <li>board (optional)<br /></p>
-
-<p>                        BID ist die Board-ID<br /></p>
-
-<p>                        Inhalt der Name des Boards</p>
-
-<p>                    </li></p>
-
-<p>                </ul></p>
-
-<p>            </li></p>
-
-<p>        </ul></p>
-
-<p>    </li></p>
-
-<p></ul></p></p>
+	<p>Gibt alle vom angemeldeten Benutzer gesetzten Bookmarks zurück.
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;bookmarks newposts=&quot;6&quot; count=&quot;2&quot;&gt;
+  &lt;bookmark BMID=&quot;92071&quot; newposts=&quot;6&quot; PID=&quot;1242999267&quot;&gt;
+    &lt;thread TID=&quot;194906&quot; closed=&quot;0&quot; pages=&quot;325&quot;&gt;
+      &lt;![CDATA[Hardware-Kaufberatung]]&gt;
+    &lt;/thread&gt;
+    &lt;board BID=&quot;10&quot;&gt;
+      &lt;![CDATA[Hardware &amp; Netzwerk]]&gt;
+    &lt;/board&gt;
+  &lt;/bookmark&gt;
+  &lt;bookmark BMID=&quot;95504&quot; newposts=&quot;0&quot; PID=&quot;1242999854&quot;&gt;
+    &lt;thread TID=&quot;140831&quot; closed=&quot;0&quot; pages=&quot;5525&quot;&gt;
+      &lt;![CDATA[Gehirnsalat]]&gt;
+    &lt;/thread&gt;
+    &lt;board BID=&quot;43&quot;&gt;
+      &lt;![CDATA[Webdesign &amp; Coding]]&gt;
+    &lt;/board&gt;
+  &lt;/bookmark&gt;
+&lt;/bookmarks&gt;
+</pre>
+<ul>
+    <li>bookmarks ist das root-Element. <br />
+        newposts ist die Anzahl der neuen Posts<br />
+        count ist die Anzahl der Lesezeichen
+        <ul>
+            <li>bookmark ist ein einzelnes Lesezeichen<br />
+                BMID ist die Bookmark-ID<br />
+                newposts ist die Anzahl der neuen Posts<br />
+                PID ist die Posting-ID des letztens Posts
+                <ul>
+                    <li>thread<br />
+                        TID ist die Thread-ID<br />
+                        closed ob der Thread geschlossen ist<br />
+                        pages die Anzahl der Seite<br />
+                        Inhalt ist der Titel des Threads
+                    </li>
+                    <li>board (optional)<br />
+                        BID ist die Board-ID<br />
+                        Inhalt der Name des Boards
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul></p>
 
 	
 </section>
@@ -864,22 +531,14 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <xml><invalid-board/></xml> zur
 <section>
 	<h2><a name="editreply.php" href="#editreply.php">editreply.php</a></h2>	
 
-
-	<p><p>Da sich der Ablauf und die Parameter sehr ähneln, verweise ich für weitere Informationen auf <a href="/docs/newreply.php">newreply.php</a> und beschränke mich hier auf die Unterschiede.</p>
-
-<p>Unterschiede im Ablauf:</p>
-
-<p>Anstelle einer TID wird nur eine PID übergeben.</p>
-
-<p><strong>Alle Parameter mit einem post_-Prefix haben hier das Prefix edit_!</strong></p>
-
-<p>Also z.B.</p>
-
-<p>post_title => edit_title</p>
-
-<p>post_icon => edit_icon</p>
-
-<p>post_converturls => edit_converturls</p></p>
+	<p>Da sich der Ablauf und die Parameter sehr ähneln, verweise ich für weitere Informationen auf <a href="/docs/newreply.php">newreply.php</a> und beschränke mich hier auf die Unterschiede.
+Unterschiede im Ablauf:
+Anstelle einer TID wird nur eine PID übergeben.
+<strong>Alle Parameter mit einem post_-Prefix haben hier das Prefix edit_!</strong>
+Also z.B.
+post_title => edit_title
+post_icon => edit_icon
+post_converturls => edit_converturls</p>
 
 	
 	<table border="1">
@@ -902,24 +561,15 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <xml><invalid-board/></xml> zur
 <section>
 	<h2><a name="newreply.php" href="#newreply.php">newreply.php</a></h2>	
 
-
-	<p><p>Das hier ist nicht direkt Teil der XML API, sondern der POST-Schnittstelle, aber da wir schonmal hier sind ;)</p>
-
-<p>Der Pfad zum Skript lautet http://forum.mods.de/bb/newreply.php</p>
-
-<p>Ablauf:</p>
-
-<p><ol></p>
-
-<p><li>newreply mit der gewünschten TID als GET-Parameter abrufen</li></p>
-
-<p><li>Das token rausfriemeln. Dafür bietet sich ein Regex an.</li></p>
-
-<p><li>Alle Felderchen brav ausfüllen und abschicken</li></p>
-
-<p></ol></p>
-
-<p><strong>Beachte:</strong> Es ist kein multipart/form-data Formular, sondern ein ganz normales!</p></p>
+	<p>Das hier ist nicht direkt Teil der XML API, sondern der POST-Schnittstelle, aber da wir schonmal hier sind ;)
+Der Pfad zum Skript lautet http://forum.mods.de/bb/newreply.php
+Ablauf:
+<ol>
+<li>newreply mit der gewünschten TID als GET-Parameter abrufen</li>
+<li>Das token rausfriemeln. Dafür bietet sich ein Regex an.</li>
+<li>Alle Felderchen brav ausfüllen und abschicken</li>
+</ol>
+<strong>Beachte:</strong> Es ist kein multipart/form-data Formular, sondern ein ganz normales!</p>
 
 	
 	<table border="1">
@@ -1015,12 +665,9 @@ Mögliche Werte:
 <section>
 	<h2><a name="newthread.php" href="#newthread.php">newthread.php</a></h2>	
 
-
-	<p><p>Da sich der Ablauf und die Parameter sehr ähneln, verweise ich für weitere Informationen auf <a href="/docs/newreply.php">newreply.php</a> und beschränke mich hier auf die Unterschiede.</p>
-
-<p>Unterschiede im Ablauf:</p>
-
-<p>Anstelle der TID wird die BID (Board-ID) übergeben.</p></p>
+	<p>Da sich der Ablauf und die Parameter sehr ähneln, verweise ich für weitere Informationen auf <a href="/docs/newreply.php">newreply.php</a> und beschränke mich hier auf die Unterschiede.
+Unterschiede im Ablauf:
+Anstelle der TID wird die BID (Board-ID) übergeben.</p>
 
 	
 	<table border="1">
@@ -1061,64 +708,35 @@ Mögliche Werte:
 <section>
 	<h2><a name="settings.php" href="#settings.php">settings.php</a></h2>	
 
-
-	<p><p>Eigentlich ist das relativ nutzlos, da sich das vermutlich eh nie ändern wird... ;D</p>
-
-<p>Ich glaube ich brauche hier nichts wirklich zu schreiben, praktisch alle Angaben hieraus kann man auch hardcoden. (Henne-Ei-Problem: Wenn ich settings.php aufrufe um den Basispfad (/settings/base-url) herauszufinden, woher habe ich ihn denn dann ;) )</p>
-
-<p><blockquote cite="enos">Es gibt übrigens auch noch eine xml/settings.php, die bisher nirgends verwendet wird und die ich, soweit ich mich erinnern kann, auch noch nirgends verlinkt habe - vermutlich, weil sie ziemlich nutzlos ist - enos</blockquote></p>
-
-<p><xml title="Ausgabe (konstant)"></p>
-
-<p><?xml version="1.0" encoding="utf-8" ?></p>
-
-<p><settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://forum.mods.de/bb/forum.xsd" current-user-id="0"></p>
-
-<p>  <flags></p>
-
-<p>    <allow-dynamic-images value="0"/></p>
-
-<p>    <is-online value="1"/></p>
-
-<p>  </flags></p>
-
-<p>  <forum-title></p>
-
-<p>    <![CDATA[mods.de - Forum]]></p>
-
-<p>  </forum-title></p>
-
-<p>  <base-url></p>
-
-<p>  <![CDATA[http://forum.mods.de/bb]]></p>
-
-<p>  </base-url></p>
-
-<p>  <base-url-banners></p>
-
-<p>  <![CDATA[http://forum.mods.de/bb/img/head/]]></p>
-
-<p>  </base-url-banners></p>
-
-<p>  <banner></p>
-
-<p>    <![CDATA[banner-mde.jpeg]]></p>
-
-<p>  </banner></p>
-
-<p>  <replies-per-page>30 </p>
-
-<p>  </replies-per-page></p>
-
-<p>  <threads-per-page>30 </p>
-
-<p>  </threads-per-page></p>
-
-<p></settings></p>
-
-<p></xml></p>
-
-<p></p></p>
+	<p>Eigentlich ist das relativ nutzlos, da sich das vermutlich eh nie ändern wird... ;D
+Ich glaube ich brauche hier nichts wirklich zu schreiben, praktisch alle Angaben hieraus kann man auch hardcoden. (Henne-Ei-Problem: Wenn ich settings.php aufrufe um den Basispfad (/settings/base-url) herauszufinden, woher habe ich ihn denn dann ;) )
+<blockquote cite="enos">Es gibt übrigens auch noch eine xml/settings.php, die bisher nirgends verwendet wird und die ich, soweit ich mich erinnern kann, auch noch nirgends verlinkt habe - vermutlich, weil sie ziemlich nutzlos ist - enos</blockquote>
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;settings xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;http://forum.mods.de/bb/forum.xsd&quot; current-user-id=&quot;0&quot;&gt;
+  &lt;flags&gt;
+    &lt;allow-dynamic-images value=&quot;0&quot;/&gt;
+    &lt;is-online value=&quot;1&quot;/&gt;
+  &lt;/flags&gt;
+  &lt;forum-title&gt;
+    &lt;![CDATA[mods.de - Forum]]&gt;
+  &lt;/forum-title&gt;
+  &lt;base-url&gt;
+  &lt;![CDATA[http://forum.mods.de/bb]]&gt;
+  &lt;/base-url&gt;
+  &lt;base-url-banners&gt;
+  &lt;![CDATA[http://forum.mods.de/bb/img/head/]]&gt;
+  &lt;/base-url-banners&gt;
+  &lt;banner&gt;
+    &lt;![CDATA[banner-mde.jpeg]]&gt;
+  &lt;/banner&gt;
+  &lt;replies-per-page&gt;30 
+  &lt;/replies-per-page&gt;
+  &lt;threads-per-page&gt;30 
+  &lt;/threads-per-page&gt;
+&lt;/settings&gt;
+</pre>
+</p>
 
 	
 </section>
@@ -1126,340 +744,174 @@ Mögliche Werte:
 <section>
 	<h2><a name="thread.php" href="#thread.php">thread.php</a></h2>	
 
-
-	<p><p>Die thread.php ist für die Ausgabe von Threads mitsamt Posts zuständig.</p>
-
-<p>Gerüchteweise ist es irgendwie möglich die Ausgabe auf einen Post zu beschränken bzw. die Anzahl der Auszugebenden Posts zu verändern. Wie dies gemacht wird ist derzeit jedoch unbekannt.</p>
-
-<p>Normalerweise wird eine vollständige Seite (30 Posts) oder, wenn es nicht soviele Posts gibt, so viele Posts ausgegeben, bis es keine Posts mehr zum Ausgeben gibt. Anders gesagt ist data(/thread/posts/@count) nie größer als 30.</p>
-
-<p><xml title="Beispiel"></p>
-
-<p><?xml version="1.0" encoding="utf-8" ?></p>
-
-<p><thread xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://forum.mods.de/bb/forum.xsd" current-user-id="1224901" id="140831">  </p>
-
-<p>  <title>    </p>
-
-<p>    <![CDATA[Gehirnsalat]]></p>
-
-<p>  </title>    </p>
-
-<p>  <subtitle>      </p>
-
-<p>    <![CDATA[wir unter uns]]></p>
-
-<p>  </subtitle>      </p>
-
-<p>  <number-of-replies value='165797' />      </p>
-
-<p>  <number-of-hits value='5767761' />      </p>
-
-<p>  <flags>        </p>
-
-<p>    <is-closed value="0" />        </p>
-
-<p>    <is-sticky value="0" />        </p>
-
-<p>    <is-important value="0" />        </p>
-
-<p>    <is-announcement value="0" />        </p>
-
-<p>    <is-global value="0" />      </p>
-
-<p>  </flags>      </p>
-
-<p>  <in-board id="43" />      </p>
-
-<p>  <firstpost>        </p>
-
-<p>    <post>          </p>
-
-<p>      <user id="19602">            </p>
-
-<p>        <![CDATA[TriggerTG]]></p>
-
-<p>      </user>            </p>
-
-<p>      <date timestamp="1149182655">01.06.2006 19:24:15</p>
-
-<p>      </date>            </p>
-
-<p>      <in-thread id="140831" />            </p>
-
-<p>      <in-board id="43" />          </p>
-
-<p>    </post>        </p>
-
-<p>  </firstpost></p>
-
-<p>  <posts page="5528" offset="165810" count="1">                         </p>
-
-<p>    <post id="1243000252">                    </p>
-
-<p>      <user id="1224901" group-id="3">                      </p>
-
-<p>        <![CDATA[csde_rats]]></p>
-
-<p>      </user>                      </p>
-
-<p>      <date timestamp="1312055567">30.07.2011 21:52:47</p>
-
-<p>      </date>                      </p>
-
-<p>      <message>                        </p>
-
-<p>        <edited count="2">                          </p>
-
-<p>          <lastedit>                            </p>
-
-<p>            <user id="1224901">                              </p>
-
-<p>              <![CDATA[csde_rats]]></p>
-
-<p>            </user>                              </p>
-
-<p>            <date timestamp="1312055985">30.07.2011 21:59:45</p>
-
-<p>            </date>                            </p>
-
-<p>          </lastedit>                          </p>
-
-<p>        </edited>                          </p>
-
-<p>        <content>                            </p>
-
-<p>          <![CDATA[So ich hab mal angefangen: [URL]http://mde-xml.docs.enkore.de/[/URL] *Le Fu: Muss noch kurz dem werten Gast Rechte geben *erledigt]]></p>
-
-<p>        </content>                            </p>
-
-<p>        <title></p>
-
-<p>        </title>                          </p>
-
-<p>      </message>                          </p>
-
-<p>      <avatar id="59224">                            </p>
-
-<p>        <![CDATA[./avatare/german.gif]]></p>
-
-<p>      </avatar>                            </p>
-
-<p>      <in-thread id="140831">                              </p>
-
-<p>        <![CDATA[Gehirnsalat]]></p>
-
-<p>      </in-thread>                              </p>
-
-<p>      <in-board id="43" />                            </p>
-
-<p>    </post>                                                                                                                                                                                                            </p>
-
-<p>  </posts>                                                                                                                                                                              </p>
-
-<p></thread></p>
-
-<p></xml></p>
-
-<p><ul></p>
-
-<p>	<li>thread (root)</p>
-
-<p>    	current-user-id ist die User-ID</p>
-
-<p>        id ist die Thread-ID</p>
-
-<p>		<ul></p>
-
-<p>        	<li>title</p>
-
-<p>            	Inhalt ist der Threadtitel</li></p>
-
-<p>        	<li>subtitle</p>
-
-<p>            	Inhalt ist der Untertitel</li></p>
-
-<p>            <li>number-of-replies</p>
-
-<p>            	value ist die Anzahl der Antworten</li></p>
-
-<p>            <li>number-of-hits</p>
-
-<p>            	<br>
-value ist die Anzahl der Aufrufe</li></p>
-
-<p>            <li>flags</p>
-
-<p>            	(0=Nein, 1=Ja)</p>
-
-<p>            	<ul></p>
-
-<p>                	<li>is-closed</p>
-
-<p>                    	value gibt an, ob geschlossen</li></p>
-
-<p>                    <li>is-sticky</p>
-
-<p>                    	value gibt an, ob angepinnt</li></p>
-
-<p>                    <li>is-important</p>
-
-<p>                    	value gibt an, ob als wichtig markiert</li></p>
-
-<p>                    <li>is-announcement</p>
-
-<p>                    	value gibt an, ob als Ankündigung markiert</li></p>
-
-<p>                    <li>is-global</p>
-
-<p>                    	value gibt an, ob der Thread global (in allen Foren sichtbar) ist</li></p>
-
-<p>                </ul></p>
-
-<p>          	</li></p>
-
-<p>            <li>in-board</p>
-
-<p>            	id ist die Board-ID</li></p>
-
-<p>            <li>firstpost</p>
-
-<p>            	<ul></p>
-
-<p>                	<li>user</p>
-
-<p>                    	id ist die User-ID</p>
-
-<p>                        Inhalt der Name</li></p>
-
-<p>                   	<li>date</p>
-
-<p>                    	timestamp ist ein UNIX-Zeitstempel</p>
-
-<p>                        Inhalt ist ein vorformatiertes Datum</li></p>
-
-<p>                   	<li>in-thread</p>
-
-<p>                    	id ist die Thread-ID</li></p>
-
-<p>                    <li>in-board</p>
-
-<p>                    	id ist die Board-ID</li></p>
-
-<p>           		</ul></p>
-
-<p>            </li></p>
-
-<p>            <li>posts</p>
-
-<p>            	page ist die Seite (es werden nie Posts von mehreren Seiten ausgegeben)</p>
-
-<p>                offset die Nummer des ersten Posts auf der Seite (nicht die Post-ID)</p>
-
-<p>                count ist die Anzahl der enthaltenen Elemente (hier 1, weil ich das Beispiel gekürzt habe)</p>
-
-<p>            	<ul></p>
-
-<p>                	<li>post</p>
-
-<p>                    	id ist die Post-ID</p>
-
-<p>                        <ul></p>
-
-<p>                        	<li>user</p>
-
-<p>                            	id ist die User-ID</p>
-
-<p>                                group-id ist die Group-ID</p>
-
-<p>                                Inhalt der Name</p>
-
-<p>                            </li></p>
-
-<p>                            <li>date</p>
-
-<p>                                timestamp ist ein UNIX-Zeitstempel</p>
-
-<p>                                Inhalt ist ein vorformatiertes Datum</li></p>
-
-<p>                            <li>message</p>
-
-<p>                            	<ul></p>
-
-<p>                                	<li>edited</p>
-
-<p>                                    	count ist die Anzahl der Bearbeitungen</p>
-
-<p>                                        <ul></p>
-
-<p>                                        	<li>lastedit</p>
-
-<p>                                                <ul></p>
-
-<p>                                                    <li>user</p>
-
-<p>                                                        id ist die User-ID</p>
-
-<p>                                                        group-id ist die Group-ID</p>
-
-<p>                                                        Inhalt der Name</li></p>
-
-<p>                                                    <li>date</p>
-
-<p>                                                        timestamp ist ein UNIX-Zeitstempel</p>
-
-<p>                                                        Inhalt ist ein vorformatiertes Datum</li></p>
-
-<p>                                                </ul></p>
-
-<p>                                             </li></p>
-
-<p>                                        </ul></p>
-
-<p>                                    </li></p>
-
-<p>                                    <li>content</p>
-
-<p>                                    	Inhalt ist der Posttext (unprocessed, enthält also BB-Code, Smilies etc. als Plaintext). Es sind <strong>keine</strong> Zeilenumbrüche enthalten.</li></p>
-
-<p>                                    <li>title</p>
-
-<p>                                    	Inhalt ist der Posttitel, optional</li></p>
-
-<p>                                </ul></p>
-
-<p>                            </li>    </p>
-
-<p>                            <li>avatar</p>
-
-<p>                            	id ist die Avatar-ID</p>
-
-<p>                                Inhalt der Dateiname mit der Basis http://forum.mods.de/bb/</li></p>
-
-<p>                            <li>in-thread</p>
-
-<p>                                id ist die Thread-ID</p>
-
-<p>                              <br>
-  Inhalt der Name</li></p>
-
-<p>                            <li>in-board</p>
-
-<p>                                id ist die Board-ID</li></p>
-
-<p>                        </ul></p>
-
-<p>                    </li></p>
-
-<p>                </ul></p>
-
-<p>            </li></p>
-
-<p>        </ul></p>
-
-<p>    </li></p>
-
-<p></ul></p></p>
+	<p>Die thread.php ist für die Ausgabe von Threads mitsamt Posts zuständig.
+Gerüchteweise ist es irgendwie möglich die Ausgabe auf einen Post zu beschränken bzw. die Anzahl der Auszugebenden Posts zu verändern. Wie dies gemacht wird ist derzeit jedoch unbekannt.
+Normalerweise wird eine vollständige Seite (30 Posts) oder, wenn es nicht soviele Posts gibt, so viele Posts ausgegeben, bis es keine Posts mehr zum Ausgeben gibt. Anders gesagt ist data(/thread/posts/@count) nie größer als 30.
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;thread xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;http://forum.mods.de/bb/forum.xsd&quot; current-user-id=&quot;1224901&quot; id=&quot;140831&quot;&gt;  
+  &lt;title&gt;    
+    &lt;![CDATA[Gehirnsalat]]&gt;
+  &lt;/title&gt;    
+  &lt;subtitle&gt;      
+    &lt;![CDATA[wir unter uns]]&gt;
+  &lt;/subtitle&gt;      
+  &lt;number-of-replies value=&#x27;165797&#x27; /&gt;      
+  &lt;number-of-hits value=&#x27;5767761&#x27; /&gt;      
+  &lt;flags&gt;        
+    &lt;is-closed value=&quot;0&quot; /&gt;        
+    &lt;is-sticky value=&quot;0&quot; /&gt;        
+    &lt;is-important value=&quot;0&quot; /&gt;        
+    &lt;is-announcement value=&quot;0&quot; /&gt;        
+    &lt;is-global value=&quot;0&quot; /&gt;      
+  &lt;/flags&gt;      
+  &lt;in-board id=&quot;43&quot; /&gt;      
+  &lt;firstpost&gt;        
+    &lt;post&gt;          
+      &lt;user id=&quot;19602&quot;&gt;            
+        &lt;![CDATA[TriggerTG]]&gt;
+      &lt;/user&gt;            
+      &lt;date timestamp=&quot;1149182655&quot;&gt;01.06.2006 19:24:15
+      &lt;/date&gt;            
+      &lt;in-thread id=&quot;140831&quot; /&gt;            
+      &lt;in-board id=&quot;43&quot; /&gt;          
+    &lt;/post&gt;        
+  &lt;/firstpost&gt;
+  &lt;posts page=&quot;5528&quot; offset=&quot;165810&quot; count=&quot;1&quot;&gt;                         
+    &lt;post id=&quot;1243000252&quot;&gt;                    
+      &lt;user id=&quot;1224901&quot; group-id=&quot;3&quot;&gt;                      
+        &lt;![CDATA[csde_rats]]&gt;
+      &lt;/user&gt;                      
+      &lt;date timestamp=&quot;1312055567&quot;&gt;30.07.2011 21:52:47
+      &lt;/date&gt;                      
+      &lt;message&gt;                        
+        &lt;edited count=&quot;2&quot;&gt;                          
+          &lt;lastedit&gt;                            
+            &lt;user id=&quot;1224901&quot;&gt;                              
+              &lt;![CDATA[csde_rats]]&gt;
+            &lt;/user&gt;                              
+            &lt;date timestamp=&quot;1312055985&quot;&gt;30.07.2011 21:59:45
+            &lt;/date&gt;                            
+          &lt;/lastedit&gt;                          
+        &lt;/edited&gt;                          
+        &lt;content&gt;                            
+          &lt;![CDATA[So ich hab mal angefangen: [URL]http://mde-xml.docs.enkore.de/[/URL] *Le Fu: Muss noch kurz dem werten Gast Rechte geben *erledigt]]&gt;
+        &lt;/content&gt;                            
+        &lt;title&gt;
+        &lt;/title&gt;                          
+      &lt;/message&gt;                          
+      &lt;avatar id=&quot;59224&quot;&gt;                            
+        &lt;![CDATA[./avatare/german.gif]]&gt;
+      &lt;/avatar&gt;                            
+      &lt;in-thread id=&quot;140831&quot;&gt;                              
+        &lt;![CDATA[Gehirnsalat]]&gt;
+      &lt;/in-thread&gt;                              
+      &lt;in-board id=&quot;43&quot; /&gt;                            
+    &lt;/post&gt;                                                                                                                                                                                                            
+  &lt;/posts&gt;                                                                                                                                                                              
+&lt;/thread&gt;
+</pre>
+<ul>
+	<li>thread (root)
+    	current-user-id ist die User-ID
+        id ist die Thread-ID
+		<ul>
+        	<li>title
+            	Inhalt ist der Threadtitel</li>
+        	<li>subtitle
+            	Inhalt ist der Untertitel</li>
+            <li>number-of-replies
+            	value ist die Anzahl der Antworten</li>
+            <li>number-of-hits
+            	
+value ist die Anzahl der Aufrufe</li>
+            <li>flags
+            	(0=Nein, 1=Ja)
+            	<ul>
+                	<li>is-closed
+                    	value gibt an, ob geschlossen</li>
+                    <li>is-sticky
+                    	value gibt an, ob angepinnt</li>
+                    <li>is-important
+                    	value gibt an, ob als wichtig markiert</li>
+                    <li>is-announcement
+                    	value gibt an, ob als Ankündigung markiert</li>
+                    <li>is-global
+                    	value gibt an, ob der Thread global (in allen Foren sichtbar) ist</li>
+                </ul>
+          	</li>
+            <li>in-board
+            	id ist die Board-ID</li>
+            <li>firstpost
+            	<ul>
+                	<li>user
+                    	id ist die User-ID
+                        Inhalt der Name</li>
+                   	<li>date
+                    	timestamp ist ein UNIX-Zeitstempel
+                        Inhalt ist ein vorformatiertes Datum</li>
+                   	<li>in-thread
+                    	id ist die Thread-ID</li>
+                    <li>in-board
+                    	id ist die Board-ID</li>
+           		</ul>
+            </li>
+            <li>posts
+            	page ist die Seite (es werden nie Posts von mehreren Seiten ausgegeben)
+                offset die Nummer des ersten Posts auf der Seite (nicht die Post-ID)
+                count ist die Anzahl der enthaltenen Elemente (hier 1, weil ich das Beispiel gekürzt habe)
+            	<ul>
+                	<li>post
+                    	id ist die Post-ID
+                        <ul>
+                        	<li>user
+                            	id ist die User-ID
+                                group-id ist die Group-ID
+                                Inhalt der Name
+                            </li>
+                            <li>date
+                                timestamp ist ein UNIX-Zeitstempel
+                                Inhalt ist ein vorformatiertes Datum</li>
+                            <li>message
+                            	<ul>
+                                	<li>edited
+                                    	count ist die Anzahl der Bearbeitungen
+                                        <ul>
+                                        	<li>lastedit
+                                                <ul>
+                                                    <li>user
+                                                        id ist die User-ID
+                                                        group-id ist die Group-ID
+                                                        Inhalt der Name</li>
+                                                    <li>date
+                                                        timestamp ist ein UNIX-Zeitstempel
+                                                        Inhalt ist ein vorformatiertes Datum</li>
+                                                </ul>
+                                             </li>
+                                        </ul>
+                                    </li>
+                                    <li>content
+                                    	Inhalt ist der Posttext (unprocessed, enthält also BB-Code, Smilies etc. als Plaintext). Es sind <strong>keine</strong> Zeilenumbrüche enthalten.</li>
+                                    <li>title
+                                    	Inhalt ist der Posttitel, optional</li>
+                                </ul>
+                            </li>    
+                            <li>avatar
+                            	id ist die Avatar-ID
+                                Inhalt der Dateiname mit der Basis http://forum.mods.de/bb/</li>
+                            <li>in-thread
+                                id ist die Thread-ID
+                              
+  Inhalt der Name</li>
+                            <li>in-board
+                                id ist die Board-ID</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul></p>
 
 	
 	<table border="1">

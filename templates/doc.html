@@ -18,8 +18,7 @@ Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Du
 <section>
 	<h2><a name="{{ chapter.title|urlencode }}" href="#{{ chapter.title|urlencode }}">{{ chapter.title }}</a></h2>	
 
-
-	<p>{{ chapter.body|safe|nl2br }}</p>
+	<p>{{ chapter.body|safe }}</p>
 
 	{% if chapter.params %}
 	<table border="1">
