@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset='utf-8'>
 <title>forum.mods.de XML API Doku</title>
 </head>
 <body>
@@ -9,37 +10,23 @@
 Basierend auf PM-Gesprächen mit enos aus 2011. 2012 verschollen. 2014 aus DB-Dump wiederhergestellt.
 
 <ol>
-
 	<li><a href="#mods.de%20Forum%20XML%20API%20Dokumentation">mods.de Forum XML API Dokumentation</a>
-
 	<li><a href="#Applikationen">Applikationen</a>
-
 	<li><a href="#Identifikatoren">Identifikatoren</a>
-
 	<li><a href="#Login">Login</a>
-
 	<li><a href="#Logout">Logout</a>
-
 	<li><a href="#Queries">Queries</a>
-
 	<li><a href="#board.php">board.php</a>
-
 	<li><a href="#boards.php">boards.php</a>
-
 	<li><a href="#bookmarks.php">bookmarks.php</a>
-
 	<li><a href="#editreply.php">editreply.php</a>
-
 	<li><a href="#newreply.php">newreply.php</a>
-
 	<li><a href="#newthread.php">newthread.php</a>
-
 	<li><a href="#settings.php">settings.php</a>
-
 	<li><a href="#thread.php">thread.php</a>
-
 </ol>
 
+Anmerkung: threads.php fehlt.
 
 <section>
 	<h2><a name="mods.de%20Forum%20XML%20API%20Dokumentation" href="#mods.de%20Forum%20XML%20API%20Dokumentation">mods.de Forum XML API Dokumentation</a></h2>	
@@ -257,65 +244,64 @@ Das ausgegebene XML hält sich an <a href="http://forum.mods.de/bb/forum.xsd">di
 &lt;/board&gt;
 </pre>
 <ul>
-	<li>board
-    	current-user-id User-ID
-        id Board-ID
+	<li>board<br>
+    	<code>current-user-id</code> User-ID
+        <code>id</code> Board-ID
         <ul>
         	<li>name</li>
             <li>description</li>
-            <li>number-of-threads
+            <li>number-of-threads<br>
             	value ist die Anzahl der Threads im Board</li>
-            <li>number-of-replies
+            <li>number-of-replies<br>
             	value ist die Anzahl aller Antworten</li>
-            <li>in-category
+            <li>in-category<br>
             	id ist die Category-ID</li>
-            <li>threads
-            	with-stickies spiegelt den Parameter wieder
-                with-globals ebenso
-                page ist die Seite
-                offset ist die Anzahl der am Anfang übersprungenen Threads
+            <li>threads<br>
+            	with-stickies spiegelt den Parameter wieder<br>
+                with-globals ebenso<br>
+                page ist die Seite<br>
+                offset ist die Anzahl der am Anfang übersprungenen Threads<br>
                 count die Anzahl der Threads dieser Seite
                 <ul>
-                	<li>thread
+                	<li>thread<br>
                     	id ist die Thread-ID
                         <ul>
-                            <li>title
+                            <li>title<br>
                                 Inhalt ist der Threadtitel</li>
-                            <li>subtitle
+                            <li>subtitle<br>
                                 Inhalt ist der Untertitel</li>
-                            <li>number-of-replies
+                            <li>number-of-replies<br>
                                 value ist die Anzahl der Antworten</li>
-                            <li>number-of-hits
+                            <li>number-of-hits<br>
                                 value ist die Anzahl der Aufrufe</li>
                             <li>flags
                                 (0=Nein, 1=Ja)
                                 <ul>
-                                    <li>is-closed
+                                    <li>is-closed<br>
                                         value gibt an, ob geschlossen</li>
-                                    <li>is-sticky
+                                    <li>is-sticky<br>
                                         value gibt an, ob angepinnt</li>
-                                    <li>is-important
+                                    <li>is-important<br>
                                         value gibt an, ob als wichtig markiert</li>
-                                    <li>is-announcement
+                                    <li>is-announcement<br>
                                         value gibt an, ob als Ankündigung markiert</li>
-                                    <li>is-global
+                                    <li>is-global<br>
                                         value gibt an, ob der Thread global (in allen Foren sichtbar) ist</li>
                                 </ul>
                             </li>
-                            <li>in-board
+                            <li>in-board<br>
                                 id ist die Board-ID</li>
                             <li>firstpost
-  
                               <ul>
-                                    <li>user
+                                    <li>user<br>
                                         id ist die User-ID
                                         Inhalt der Name</li>
-                                    <li>date
-                                        timestamp ist ein UNIX-Zeitstempel
+                                    <li>date<br>
+                                      <code>timestamp</code>-Attribut ist ein UNIX-Zeitstempel.
                                         Inhalt ist ein vorformatiertes Datum</li>
-                                    <li>in-thread
+                                    <li>in-thread<br>
                                         id ist die Thread-ID</li>
-                                    <li>in-board
+                                    <li>in-board<br>
                                         id ist die Board-ID</li>
                                 </ul>
                             </li>
@@ -413,42 +399,42 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <pre>&lt;invalid-board/&gt;</pr
 &lt;/categories&gt;
 </pre>
 <ul>
-    <li>categories ist das root-Element.
-        current-user-id ist die User-ID des angemeldeten Benutzers
+    <li>categories ist das root-Element.<br>
+        current-user-id ist die User-ID des angemeldeten Benutzers<br>
         count ist die Anzahl der Kategorien
         <ul>
-            <li>category repräsentiert eine Kategorie
+            <li>category repräsentiert eine Kategorie<br>
                 id ist die Category-ID
                 <ul>
                     <li>name</li>
                     <li>description</li>
-                    <li>boards
+                    <li>boards<br>
                         count Anzahl
                         <ul>
                             <li>board
                                 <ul>
                                     <li>name</li>
                                     <li>desription</li>
-                                    <li>number-of-threads
+                                    <li>number-of-threads<br>
                                         value Anzahl</li>
-                                    <li>number-of-replies
+                                    <li>number-of-replies<br>
                                         value Anzahl</li>
-                                    <li>in-category
+                                    <li>in-category<br>
                                         id Die Category-ID (Könnte das womöglich redundant sein?)</li>
                                     <li>lastpost
                                         <ul>
                                             <li>post
                                                 <ul>
-                                                    <li>user
-                                                        id User-ID
+                                                    <li>user<br>
+                                                        id User-ID<br>
                                                         Inhalt ist der Name</li>
-                                                    <li>date
-                                                        timestamp ist der UNIX-Zeitstempel
+                                                    <li>date<br>
+                                                        timestamp ist der UNIX-Zeitstempel.<br>
                                                         Inhalt ist ein vorformatiertes Datum im Format DD.MM.YYYY HH:MM:SS</li>
-                                                    <li>in-thread
-                                                        id ist die Thread-ID
+                                                    <li>in-thread<br>
+                                                        id ist die Thread-ID<br>
                                                         Inhalt ist der Titel</li>
-                                                    <li>in-board
+                                                    <li>in-board<br>
                                                         id ist die Board-ID</li>
                                                 </ul>
                                             </li>
@@ -456,9 +442,8 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <pre>&lt;invalid-board/&gt;</pr
                                     </li>
                                     <li>moderators
                                         <ul>
-                                            <li>user
-                           
-                     id ist die User-ID</li>
+                                            <li>user<br>
+                                              id ist die User-ID</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -812,98 +797,98 @@ Normalerweise wird eine vollständige Seite (30 Posts) oder, wenn es nicht sovie
 &lt;/thread&gt;
 </pre>
 <ul>
-	<li>thread (root)
-    	current-user-id ist die User-ID
+	<li>thread (root)<br>
+    	current-user-id ist die User-ID<br>
         id ist die Thread-ID
 		<ul>
-        	<li>title
+        	<li>title<br>
             	Inhalt ist der Threadtitel</li>
-        	<li>subtitle
+        	<li>subtitle<br>
             	Inhalt ist der Untertitel</li>
-            <li>number-of-replies
+            <li>number-of-replies<br>
             	value ist die Anzahl der Antworten</li>
-            <li>number-of-hits
-            	
-value ist die Anzahl der Aufrufe</li>
+            <li>number-of-hits<br>
+            	value ist die Anzahl der Aufrufe</li>
             <li>flags
             	(0=Nein, 1=Ja)
             	<ul>
-                	<li>is-closed
+                	<li>is-closed<br>
                     	value gibt an, ob geschlossen</li>
-                    <li>is-sticky
+                    <li>is-sticky<br>
                     	value gibt an, ob angepinnt</li>
-                    <li>is-important
+                    <li>is-important<br>
                     	value gibt an, ob als wichtig markiert</li>
-                    <li>is-announcement
+                    <li>is-announcement<br>
                     	value gibt an, ob als Ankündigung markiert</li>
-                    <li>is-global
+                    <li>is-global<br>
                     	value gibt an, ob der Thread global (in allen Foren sichtbar) ist</li>
                 </ul>
           	</li>
-            <li>in-board
+            <li>in-board<br>
             	id ist die Board-ID</li>
             <li>firstpost
             	<ul>
-                	<li>user
-                    	id ist die User-ID
+                	<li>user<br>
+                    	id ist die User-ID<br>
                         Inhalt der Name</li>
-                   	<li>date
-                    	timestamp ist ein UNIX-Zeitstempel
+                   	<li>date<br>
+                    	timestamp ist ein UNIX-Zeitstempel<br>
                         Inhalt ist ein vorformatiertes Datum</li>
-                   	<li>in-thread
+                   	<li>in-thread<br>
                     	id ist die Thread-ID</li>
-                    <li>in-board
+                    <li>in-board<br>
                     	id ist die Board-ID</li>
            		</ul>
             </li>
-            <li>posts
-            	page ist die Seite (es werden nie Posts von mehreren Seiten ausgegeben)
-                offset die Nummer des ersten Posts auf der Seite (nicht die Post-ID)
-                count ist die Anzahl der enthaltenen Elemente (hier 1, weil ich das Beispiel gekürzt habe)
+            <li>posts<br>
+            	page ist die Seite (es werden nie Posts von mehreren Seiten ausgegeben)<br>
+                offset die Nummer des ersten Posts auf der Seite (nicht die Post-ID)<br>
+                count ist die Anzahl der enthaltenen Elemente (hier 1, weil ich das Beispiel gekürzt habe)<br>
             	<ul>
-                	<li>post
-                    	id ist die Post-ID
+                	<li>post<br>
+                    	id ist die Post-ID<br>
+                      <code>is-hidden</code> gibt an, ob der Post versteckt ist (<code>is-hidden="texthidden"</code>).
                         <ul>
-                        	<li>user
-                            	id ist die User-ID
-                                group-id ist die Group-ID
-                                Inhalt der Name
+                        	<li>user<br>
+                            	  id ist die User-ID<br>
+                                group-id ist die Group-ID. Die Group-ID ist die Nutzergruppe != Rang, z.B. sind group-id=3 Plebs, group-id=6 sind Mods, group-id=1 sind Admins. Das Attribut kann fehlen.<br>
+                                Inhalt der Name, welcher vom Namen in der HTML-Darstellung abweichen kann.
                             </li>
-                            <li>date
-                                timestamp ist ein UNIX-Zeitstempel
+                            <li>date<br>
+                                timestamp ist ein UNIX-Zeitstempel<br>
                                 Inhalt ist ein vorformatiertes Datum</li>
                             <li>message
                             	<ul>
-                                	<li>edited
+                                	<li>edited<br>
                                     	count ist die Anzahl der Bearbeitungen
                                         <ul>
                                         	<li>lastedit
                                                 <ul>
-                                                    <li>user
-                                                        id ist die User-ID
-                                                        group-id ist die Group-ID
+                                                    <li>user<br>
+                                                        id ist die User-ID<br>
+                                                        group-id ist die Group-ID<br>
                                                         Inhalt der Name</li>
-                                                    <li>date
-                                                        timestamp ist ein UNIX-Zeitstempel
+                                                    <li>date<br>
+                                                        timestamp ist ein UNIX-Zeitstempel<br>
                                                         Inhalt ist ein vorformatiertes Datum</li>
                                                 </ul>
                                              </li>
                                         </ul>
                                     </li>
-                                    <li>content
+                                    <li>content<br>
                                     	Inhalt ist der Posttext (unprocessed, enthält also BB-Code, Smilies etc. als Plaintext). Es sind <strong>keine</strong> Zeilenumbrüche enthalten.</li>
-                                    <li>title
+                                    <li>title<br>
                                     	Inhalt ist der Posttitel, optional</li>
                                 </ul>
                             </li>    
-                            <li>avatar
-                            	id ist die Avatar-ID
+                            <li>avatar<br>
+                              Dieser Tag kann leer sein.<br>
+                            	id ist die Avatar-ID<br>
                                 Inhalt der Dateiname mit der Basis http://forum.mods.de/bb/</li>
-                            <li>in-thread
-                                id ist die Thread-ID
-                              
-  Inhalt der Name</li>
-                            <li>in-board
+                            <li>in-thread<br>
+                                id ist die Thread-ID<br>
+                                Inhalt der Name</li>
+                            <li>in-board<br>
                                 id ist die Board-ID</li>
                         </ul>
                     </li>
