@@ -357,7 +357,7 @@ Das ausgegebene XML hält sich an <a href="http://forum.mods.de/bb/forum.xsd">di
 		<td>GET</td>
 		<td>BID</td>
 		<td>Die Board-ID zu der man Informationen abfragen möchte.
-Wenn es kein Board mit dieser ID gibt, kommt ein <xml><invalid-board/></xml> zurück.</td>
+Wenn es kein Board mit dieser ID gibt, kommt ein <pre>&lt;invalid-board/&gt;</pre> zurück.</td>
 	</tr>
 	
 	</table>
@@ -594,7 +594,7 @@ Ablauf:
 	<tr>
 		<td>POST</td>
 		<td>token</td>
-		<td>token ist ein Sicherheitstoken um Leute wie uns (nein, nicht wirklich ;) ) draußenzuhalten. Es wird vermutlich intern zur Verarbeitung des Aufrufs benötigt und wird uns von der Seite schon fertig ausgeliefert: <xml><input type="hidden" name="token" value="b5c7ad552bcd7063656b7b2fac1ae6eb"></xml></td>
+		<td>token ist ein Sicherheitstoken um Leute wie uns (nein, nicht wirklich ;) ) draußenzuhalten. Es wird vermutlich intern zur Verarbeitung des Aufrufs benötigt und wird uns von der Seite schon fertig ausgeliefert: <pre>&lt;input type=&quot;hidden&quot; name=&quot;token&quot; value=&quot;b5c7ad552bcd7063656b7b2fac1ae6eb&quot;&gt;</pre></td>
 	</tr>
 	
 	<tr>
@@ -925,7 +925,7 @@ value ist die Anzahl der Aufrufe</li>
 		<td>GET</td>
 		<td>TID</td>
 		<td>Die Thread-ID des auszugebenden Threads.
-Wenn keine Thread mit dieser ID existiert oder keine TID angegeben wurde, bekommt man lediglich ein <xml><invalid-thread/></xml> zurück.</td>
+Wenn keine Thread mit dieser ID existiert oder keine TID angegeben wurde, bekommt man lediglich ein <pre>&lt;invalid-thread/&gt;</pre> zurück.</td>
 	</tr>
 	
 	<tr>
@@ -939,7 +939,7 @@ Wenn in dem Thread kein Post mit dieser ID vorhanden ist, wird die erste Seite z
 		<td>GET</td>
 		<td>page</td>
 		<td>Gibt die auszugebende Seite an.
-Wenn der Thread nicht soviele Seiten hat, hat das Posts-Tag keine Kinder: <xml><posts page="6700000" offset="200999970" count="0"/></xml>
+Wenn der Thread nicht soviele Seiten hat, hat das Posts-Tag keine Kinder: <pre>&lt;posts page=&quot;6700000&quot; offset=&quot;200999970&quot; count=&quot;0&quot;/&gt;</pre>
 </td>
 	</tr>
 	
@@ -956,7 +956,7 @@ Hauptsache den Wert gabs vorher nicht....</td>
 		<td>offset</td>
 		<td>Gibt die Anzahl der am Anfang zu überspringenden Posts an.
 Es wird, sofern der Thread genug Posts hat, immer exakt mit dem offset-ten Post angefangen und von da an bis zum Threadende oder maximal 30 Posts ausgegeben.
-Wenn der Thread nicht genug Posts hat, kommt ähnliches wie bei Page zurück: <xml><posts offset="89999999999" count="0"/></xml></td>
+Wenn der Thread nicht genug Posts hat, kommt ähnliches wie bei Page zurück: <pre>&lt;posts offset=&quot;89999999999&quot; count=&quot;0&quot;/&gt;</pre></td>
 	</tr>
 	
 	<tr>

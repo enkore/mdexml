@@ -38,6 +38,8 @@ def index():
              JOIN nodehierarchy_menu_links lut USING(nid)
              JOIN menu_links child USING (mlid)
              JOIN menu_links parent ON parent.mlid = child.plid AND parent.link_title = ?""", [chapter["title"]])
+        for param in chapter["params"]:
+            param["body"] = escape_xml(param["body"])
         chapter["body"] = escape_xml(chapter["body"])
         chapters.append(chapter)
     return render_template("doc.html", chapters=chapters)
