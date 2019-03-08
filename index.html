@@ -110,9 +110,13 @@ Daher hier eine Übersicht ;)
 
 	<p>Um sich einzuloggen reicht es die folgende Kombination an Parametern zu senden;>
 Man kann dann recht einfach nachschauen, ob es geklappt hat, wenn man die zurückgegebene Seite
-nach dem String "Fehler beim Einloggen" durchsucht. Es kommen Cookies zurück, die man speichern
-muss und bei folgenden Aufrufen wieder an den Server schicken sollte, benutzt man CURL <a href="http://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTCOOKIEFILE">kann das
-CURL für einen erledigen</a>.
+nach dem String "Fehler beim Einloggen" durchsucht. Im Erfolgsfall sollte man anschließend die
+benötigten Cookies setzen, dazu muss die für einen der <em>iframe</em>s angegebene Adresse
+(http://forum.mods.de/SSO.php?...) geladen werden (momentan werden zwei <em>iframe</em>s
+zurückgegeben, die identisch sind). Diese Cookies sollte man speichern und bei folgenden Aufrufen
+wieder an den Server schicken, benutzt man CURL
+<a href="http://curl.haxx.se/libcurl/c/curl_easy_setopt.html#CURLOPTCOOKIEFILE">kann das CURL für
+einen erledigen</a>.
 Die Addresse des Logins lautet http://login.mods.de/</p>
 
 	
@@ -484,6 +488,13 @@ Wenn es kein Board mit dieser ID gibt, kommt ein <pre>&lt;invalid-board/&gt;</pr
   &lt;/bookmark&gt;
 &lt;/bookmarks&gt;
 </pre>
+Im Gegensatz zu den anderen Antworten auf API Queries, enthält das gelieferte XML Dokument
+für Bookmarks Whitespaces zur Formatierung für eine bessere Lesbarkeit durch Menschen. Einige
+XML Parser kommen damit nicht klar und erzeugen überflüssige Nodes, die als Text nur Whitespaces
+(Tabulatoren, (Windows-)Zeilenumbrüche) beinhalten. Dadurch kann zum Beispiel die Anzahl der
+Kinder des <em>bookmarks</em> Elements nicht mit der im Attribut <em>count</em> angegebenen
+Anzahl übereinstimmen; die Anzahl der tatsächlichen <em>bookmark</em> Kinder sollte aber mit
+dieser Angabe übereinstimmen.
 <ul>
     <li>bookmarks ist das root-Element. <br />
         newposts ist die Anzahl der neuen Posts<br />
